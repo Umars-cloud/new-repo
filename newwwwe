@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+
+char name[50]; int age;
+
+// Ask for the user's name printf("Enter your name: ");
+
+// Read user input fgets(name, sizeof(name), stdin);
+
+// Remove newline character from the name
+
+if ((strlen(name) > 0) && (name[strlen(name) - 1] = "\n')) { name[strlen(name) - 1] = '\0'; }
+
+// Ask for the user's age printf("Enter your age: ");
+
+// Read user input scanf("%d", &age);
+
+// Print a greeting message printf("Hello, %s!\n", name);
+
+// Determine if the user is an adult if (age >= 18) { printf("You are an adult.\n");
+
+} else { printf("You are not an adult.\n");
+
+}
+
+return 0;
